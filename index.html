@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoogleSheetClone</title>
+    <link rel="stylesheet" href="./option.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- option part in the box -->
+    <div id="options">
+      <form id="form">
+        <select name="fontFamily" id="" class="input">
+          <option value="Poppins-light">Light</option>
+          <option value="Poppins-black">Black</option>
+          <option value="Black-italic">italic</option>
+          <option value="Poppins-bold">bold</option>
+          <option value="Poppins-regular">Regular</option>
+        </select>
+        <input
+          type="number"
+          name="fontSize"
+          min="16"
+          max="32"
+          value="16"
+          class="input"
+        />
+        <div>
+          <input type="checkbox" id="bold" name="isBold" />
+          <label for="bold" class="material-symbols-outlined">
+            format_bold
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" id="Italic" name="isItalic" />
+          <label for="Italic" class="material-symbols-outlined">
+            format_italic
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" id="Underline" name="isUnderline" />
+          <label for="Underline" class="material-symbols-outlined">
+            format_underlined
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="align" value="left" id="left" checked />
+          <label for="left" class="material-symbols-outlined">
+            format_align_left
+          </label>
+          <input type="radio" name="align" value="center" id="center" />
+          <label for="center" class="material-symbols-outlined">
+            format_align_center</label
+          >
+          <input type="radio" name="align" value="right" id="right" />
+          <label for="right" class="material-symbols-outlined">
+            format_align_right
+          </label>
+        </div>
+        <div>
+          <input type="color" name="textColor" value="#000000" id="textColor" />
+          <label for="textColor" class="material-symbols-outlined">
+            format_color_text
+          </label>
+        </div>
+        <div>
+          <input type="color" name="bgColor" value="#ffffff" id="bgColor" />
+          <label for="bgColor" class="material-symbols-outlined">
+            format_color_fill
+          </label>
+        </div>
+        
+
+        <!--defualt value 16 rahegi a-->
+      </form>
+    </div>
+    <div id="cell-state">
+      <div id="active-cell">null</div>
+      <input type="text" placeholder=" f(x)" />
+    </div>
+
+    <div id="root">
+      <div id="header">
+        <div class="head-cell"></div>
+        <!-- <div class="head-cells"></div>
+        <div class="head-cells"></div>
+        <div class="head-cells"></div>
+        <div class="head-cells"></div>
+        <div class="head-cells"></div>
+      </div> -->
+      </div>
+      <div id="body">
+        <div id="sNoleft">
+          <!-- <div class="sNo-cellLeft"></div>
+          <div class="sNo-cellLeft"></div>
+          <div class="sNo-cellLeft"></div>
+          <div class="sNo-cellLeft"></div>
+          <div class="sNo-cellLeft"></div> -->
+        </div>
+        <div id="cells-containerRight"></div>
+      </div>
+    </div>
+
+    <script src="./functionality.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

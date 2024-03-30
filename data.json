@@ -1,0 +1,8 @@
+FontFamily: form.fontFamily.value,
+FontSize: form.fontSize.value,
+IsBold: form.isBold.checked,
+IsItalic: form.isItalic.checked,
+IsUnderLine: form.isUnderline.checked,
+Isalign: form.align.value, //"left ,right,center"
+TextColor: form["textColor"].value,
+BgColor: form["bgColor"].value,

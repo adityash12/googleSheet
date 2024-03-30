@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins-regular;
+}
+#root {
+  width: 100vw;
+  height: 75vh;
+  /* height: 150vh; */
+  /* border: 1px solid rgb(128, 0, 0); */
+  overflow-x: scroll;
+  position: relative;
+  /* margin-top: 100px; */
+}
+
+#header {
+  /* border: 2px solid red; */
+  width: fit-content; /*ab ye puri width lega*/
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  z-index: 120;
+}
+
+.head-cell:first-child {
+  background-color: #fff !important;
+  min-width: 40px;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* border: 2px solid rgb(60, 255, 0); */
+  z-index: 100000;
+
+  /* position: fixed; */
+  /* left: 0; */
+}
+.head-cell {
+  height: 30px;
+  border: 1px solid gray;
+  min-width: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#body {
+  width: fit-content;
+  /* border: 2px solid rgb(119, 128, 0); */
+  display: grid;
+  grid-template-columns: 42px auto;
+}
+#sNoleft {
+  background-color: yellow;
+  position: sticky;
+  left: 0px;
+  background-color: #fff;
+  z-index: 100;
+}
+.sNo-cellLeft {
+  border: 1px solid gray;
+  height: 25px;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.rowcell {
+  display: flex;
+  /* height: 30px; */
+  /* border: 1px solid green; */
+}
+.columncell {
+  display: flex;
+  border: 1px solid gray;
+  height: 25px;
+  min-width: 200px;
+}
+.columncell:focus {
+  /* border-radius: 5px; */
+  /* outline: 1px solid rgb(18, 14, 248); */
+  box-shadow: 0px 0px 5px rgba(5, 5, 65, 0.993);
+}

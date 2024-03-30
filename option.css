@@ -1,0 +1,83 @@
+
+@font-face {
+  font-family:Poppins-black;
+  src: url(./fonts/Poppins-Black.ttf);   /* here we are create custom  fonts */
+}
+@font-face {
+  font-family:Black-italic;
+  src: url(./fonts/Poppins-BlackItalic.ttf); /*here we are making custom fonts*/
+}
+@font-face {
+  font-family:Poppins-bold;
+  src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family:Poppins-light;
+  src: url(./fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family:Poppins-regular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+#form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  input:checked + label {
+    background-color: rgb(211, 227, 253);
+    border-radius: 5px;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+  input[type="color"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  input[type="chekbox"] + label,
+  input[type="radio"] + label {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .input {
+    padding: 5px;
+    min-width: 100px;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  #cell-state {
+    display: flex;
+    align-items: center;
+    padding: 10px 100px;
+    gap: 20px;
+  }
+  #cell-state input {
+    flex-grow:1 ;
+    height: 30px;
+    margin: 10px;
+    
+  }
+  #cell-state input :focus {
+    outline: none;
+  }
+  
+  #cell-state div {
+    background-color: rgb(231, 206, 206);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #export{
+    cursor: pointer;
+    font-size: 32px;
+  }
+  
